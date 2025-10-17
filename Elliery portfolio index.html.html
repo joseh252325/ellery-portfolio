@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ellery Daniel Carter — Data Annotation Portfolio</title>
+  <style>
+    :root{--accent:#0b72ff;--muted:#6b6b6b;--bg:#f7f8fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
+    .container{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:999px;background:linear-gradient(135deg,var(--accent),#6c9bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(17,17,17,0.06)}
+
+    /* Left column */
+    .section + .section{margin-top:18px}
+    .skills-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{padding:8px 10px;border-radius:999px;border:1px solid #e6e9f2;font-size:13px}
+    .projects .project{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed #eef2ff}
+    .project:last-child{border-bottom:0}
+    .proj-thumb{width:96px;height:64px;border-radius:8px;background:#eef4ff;display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--accent)}
+    .proj-meta h4{margin:0 0 6px;font-size:16px}
+    .proj-meta p{margin:0;color:var(--muted);font-size:14px}
+    .tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:#f3f8ff;border:1px solid #e6f0ff}
+
+    /* Right column */
+    .contact-list{display:flex;flex-direction:column;gap:10px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:74px;height:74px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">ED</div>
+      <div>
+        <h1>Ellery Daniel Carter</h1>
+        <p class="lead">Data Annotation Specialist • Image, Text & Audio Labeling • QA for ML pipelines</p>
+        <p class="small">San Diego, California, USA • morgandennis1010@gmail.com</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card section" id="about">
+          <h3>About</h3>
+          <p style="margin-top:8px;color:var(--muted)">Detail-focused Data Labeling Specialist experienced in creating, validating and improving datasets for computer vision, NLP and audio ML projects. Comfortable working with annotation platforms, following complex guidelines, and delivering high-quality labeled data under tight deadlines. Skilled at QA, basic Python for data processing, and collaborating remotely with cross-functional teams.</p>
+        </section>
+
+        <section class="card section" id="skills">
+          <h3>Core Skills</h3>
+          <div class="skills-list">
+            <div class="skill">Image Annotation (Bounding Boxes, Segmentation)</div>
+            <div class="skill">Text Labeling & Intent Classification</div>
+            <div class="skill">Audio Transcription & Speaker ID</div>
+            <div class="skill">Quality Assurance & Validation</div>
+            <div class="skill">Annotation Tools: Labelbox, CVAT, Scale AI</div>
+            <div class="skill">Python (pandas, basic scripts)</div>
+            <div class="skill">SQL & Excel</div>
+            <div class="skill">Remote Task Management</div>
+          </div>
+        </section>
+
+        <section class="card section projects" id="projects">
+          <h3>Selected Projects</h3>
+
+          <div class="project">
+            <div class="proj-thumb">AV</div>
+            <div class="proj-meta">
+              <h4>Image Annotation — Autonomous Vehicle Dataset</h4>
+              <p>Annotated 12,000+ frames with bounding boxes, classes, and occlusion labels for traffic objects (vehicles, pedestrians, signs). Implemented a QA checklist and reduced label inconsistencies by 18%.</p>
+              <div class="tags"><span class="tag">Tools: CVAT, LabelImg</span><span class="tag">Type: Bounding Boxes</span><span class="tag">Duration: 3 months</span></div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="proj-thumb">TXT</div>
+            <div class="proj-meta">
+              <h4>Text Labeling — Chatbot Intent & Entity Tagging</h4>
+              <p>Led annotation for 15k+ conversational examples, labeling intents and named entities for a customer-service chatbot. Helped improve intent detection accuracy in model experiments by 7%.</p>
+              <div class="tags"><span class="tag">Tools: Scale AI Console</span><span class="tag">Type: Intent Classification</span><span class="tag">Duration: 2 months</span></div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="proj-thumb">AUD</div>
+            <div class="proj-meta">
+              <h4>Audio Transcription & Speaker Diarization</h4>
+              <p>Transcribed and labeled 200+ hours of call recordings, applied speaker separation tags, and validated timestamps for speech recognition training. Maintained >97% accuracy in review audits.</p>
+              <div class="tags"><span class="tag">Tools: Custom annotation tool</span><span class="tag">Type: Transcription</span><span class="tag">Duration: 4 months</span></div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="card section" id="experience">
+          <h3>Experience</h3>
+          <p style="margin-top:8px;color:var(--muted)"><strong>Data Labeling Specialist (Remote)</strong> — Appen / TELUS / Remotasks<br>
+          Jan 2023 – Present<br>
+          Annotated, validated and QA'd datasets for vision and language projects. Coordinated with project managers to refine guidelines and performed peer reviews to ensure consistency across large labeling teams.</p>
+
+          <p style="margin-top:12px;color:var(--muted)"><strong>Data Entry & QA — Freelance</strong> — San Diego, CA<br>
+          Jun 2021 – Dec 2022<br>
+          Prepared and cleaned datasets, verified annotations, and streamlined labeling workflows to reduce errors and speed up handoff to model training teams.</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-list">
+            <div><strong>Email</strong><div class="small">morgandennis1010@gmail.com</div></div>
+            <div><strong>Location</strong><div class="small">San Diego, California, USA</div></div>
+            <div><strong>LinkedIn</strong><div class="small">linkedin.com/in/ellery-d-carter (placeholder)</div></div>
+            <div><strong>Availability</strong><div class="small">Open to remote contract & part-time labeling projects</div></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Certifications & Education</h3>
+          <p class="small" style="margin-top:8px"><strong>B.S. Information Technology</strong> — San Diego State University, 2021</p>
+          <p class="small" style="margin-top:8px"><strong>Certifications</strong> — Data Annotation Fundamentals (placeholder), Excel for Data Analysis (placeholder)</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Download</h3>
+          <p class="small" style="margin-top:8px">You can download a printable PDF or a resume from this portfolio. (Replace with your own links after deployment.)</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built for hiring platforms • Clean, responsive layout • Replace placeholders with your photos or links.
+    </footer>
+  </div>
+</body>
+</html>
